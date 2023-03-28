@@ -1,0 +1,70 @@
+@wajah font {
+    font-family: 'Pixel-Bit';
+    src: url(../Font/kkberkbm.ttf);
+}
+
+html {
+    background-color: hitam;
+}
+
+tubuh {
+    tampilan: fleksibel;
+    menyelaraskan-item: tengah;
+    justify-content: center;
+    tinggi: 100vw;
+    luapan: tersembunyi;
+    bantalan: 0;
+    margin: 0;
+}
+
+h1 {
+    font-family: 'Pixel-Bit';
+    ukuran font: 150px;
+    transformasi teks: huruf besar;
+    background: linear-gradient(ke kanan, #e5ff00 0%, #00ff0d 25%, #1100ff 50%, #ff00d4 75%, #ff8800 100%);
+    ukuran latar belakang: 400%;
+    -webkit-background-clip: teks;
+    -webkit-text-fill-color: transparan;
+    animasi: animasi 16s linier tak terbatas;
+    ruang putih: nowrap;
+    perataan vertikal: tengah;
+}
+
+@media (min-lebar:768px) {
+    tubuh {
+        tinggi: 100vh;
+    }
+}
+
+@keyframes menganimasikan {
+    ke {
+        background-position: 400%;
+    }
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+@media (lebar-maks:768px) {
+    tubuh {
+        transformasi: putar (90 derajat);
+    }
+    h1 {
+        ukuran font: 50px;
+        animasi: menghidupkan 14s linear tak terbatas;
+    }
+    @keyframes menganimasikan {
+        ke {
+            background-position: 400%;
+        }
+        0% {
+            transform: translateX(100%);
+        }
+        100% {
+            transform: translateX(-100%);
+        }
+    }
+}   
